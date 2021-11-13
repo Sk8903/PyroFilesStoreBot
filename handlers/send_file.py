@@ -12,7 +12,7 @@ async def ReplyForward(message: Message, file_id: int):
     try:
         await message.reply_text(
             f"**Here is Sharable Link of this file:**\n"
-            f"https://t.me/{Config.BOT_USERNAME}?start=SkTvOfficial_{str_to_b64(str(file_id))}\n\n"
+            f"https://playdisk.xyz/st?api=625eb8994fb6dcf3a2b045332253cb487afabafb&url=https://t.me/{Config.BOT_USERNAME}?start=SkTvOfficial_{str_to_b64(str(file_id))}\n\n"
             f"__To Retrive the Stored File, just open the link!__",
             disable_web_page_preview=True, quote=False)
     except FloodWait as e:
