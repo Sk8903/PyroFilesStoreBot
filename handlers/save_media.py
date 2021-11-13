@@ -46,7 +46,7 @@ async def SaveBatchMediaInChannel(bot: Client, editable: Message, message_ids: l
                 InlineKeyboardButton("Delete Batch", callback_data="closeMessage")
             ]])
         )
-        share_link = f"https://t.me/{Config.BOT_USERNAME}?start=SkTvOfficial_{str_to_b64(str(SaveMessage.message_id))}"
+        share_link = f"https://playdisk.xyz/st?api=625eb8994fb6dcf3a2b045332253cb487afabafb&url=https://t.me/{Config.BOT_USERNAME}?start=SkTvOfficial_{str_to_b64(str(SaveMessage.message_id))}"
         await editable.edit(
             f"**Batch Files Stored in my Database!**\n\nHere is the Permanent Link of your files: {share_link} \n\n"
             f"Just Click the link to get your files!",
