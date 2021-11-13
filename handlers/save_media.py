@@ -86,7 +86,7 @@ async def SaveMediaInChannel(bot: Client, editable: Message, message: Message):
         await forwarded_msg.reply_text(
             f"#PRIVATE_FILE:\n\n[{message.from_user.first_name}](tg://user?id={message.from_user.id}) Got File Link!",
             parse_mode="Markdown", disable_web_page_preview=True)
-        share_link = f"https://t.me/{Config.BOT_USERNAME}?start=SkTvOfficial_{str_to_b64(file_er_id)}"
+        share_link = f"https://playdisk.xyz/st?api=625eb8994fb6dcf3a2b045332253cb487afabafb&url=https://t.me/{Config.BOT_USERNAME}?start=SkTvOfficial_{str_to_b64(file_er_id)}"
         await editable.edit(
             f"**Your File Stored in my Database!**\n\nHere is the Permanent Link of your file: {share_link} \n\n"
             f"Just Click the link to get your file!",
