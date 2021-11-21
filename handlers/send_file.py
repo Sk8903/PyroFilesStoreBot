@@ -1,4 +1,4 @@
-# (c) @JAsuran
+# (c) @Sktv
 
 import asyncio
 from configs import Config
@@ -12,7 +12,7 @@ async def ReplyForward(message: Message, file_id: int):
     try:
         await message.reply_text(
             f"**Here is Sharable Link of this file:**\n"
-            f"https://shrinkme.io/st?api=98da27fc363022dd2fb059f19c14c1669b8c4ad4&url=https://t.me/{Config.BOT_USERNAME}?start=SkTvOfficial_{str_to_b64(str(file_id))}\n\n"
+            f"https://t.me/{Config.BOT_USERNAME}?start=SkTvOfficial_{str_to_b64(str(file_id))}\n\n"
             f"__To Retrive the Stored File, just open the link!__",
             disable_web_page_preview=True, quote=False)
     except FloodWait as e:
